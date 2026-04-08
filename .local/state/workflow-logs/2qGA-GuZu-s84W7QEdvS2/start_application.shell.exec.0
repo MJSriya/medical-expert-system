@@ -1,0 +1,10 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K3:49:13 PM [express] serving on port 5000
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+3:49:30 PM [express] POST /api/cases 201 in 24ms :: {"id":3,"age":25,"sexAtBirth":"male","pregnant":false,"symptomsText":"headache and fever","createdAt":"2026-04-05T15:49:30.048Z"}
+3:49:38 PM [express] POST /api/cases/3/assess 200 in 4152ms :: {"id":2,"caseId":3,"triageLevel":"urgent","summary":"Moderate headache and mild fever lasting for one day could indicate a viral infection, but other causes need consideration.","redFlags":["Severe headache","Sudden onset","Neck stiffness","Sensitivity to light","Altered mental status","Worsening symptoms"],"followUpQuestions":["Do you have neck stiffness?","Are you experiencing sensitivity to light?","Are there any changes in your mental status?","Do you have any nausea or vomiting?","Did the headache start suddenly or gradually?"],"homeCare":["Stay hydrated and rest.","Use cool compresses to manage fever.","Avoid bright lights if sensitivity appears."],"whatToTellDoctor":["Duration and severity of headache.","Presence of fever and if it fluctuates.","Any associated symptoms like nausea, neck stiffness, or sensitivity to light."],"safetyDisclaimer":"This information is not a diagnosis or treatment plan. Consult a healthcare provider for personalized medical advice.","modelInfo":{"model":"gpt-5.2","generatedAt":"2026-04-05T15:49:38.339Z"},"createdAt":"2026-04-05T15:49:38.342Z"}

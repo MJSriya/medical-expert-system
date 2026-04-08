@@ -1,0 +1,10 @@
+[1G[0K⠙[1G[0K
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+[1G[0K⠙[1G[0K3:44:10 PM [express] serving on port 5000
+Browserslist: browsers data (caniuse-lite) is 6 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+3:46:38 PM [express] POST /api/cases 201 in 75ms :: {"id":2,"age":20,"sexAtBirth":"female","pregnant":false,"symptomsText":"fever, headache and stomach ache","createdAt":"2026-04-05T15:46:38.841Z"}
+3:46:56 PM [express] POST /api/cases/2/assess 500 in 16837ms :: {"message":"Model returned invalid output"}
